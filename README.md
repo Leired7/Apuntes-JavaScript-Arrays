@@ -56,6 +56,63 @@ console.log(thingsToBuy) // ['Naranjas', 'Peras', 'Leche', 'Cereales']
 
 En este ejemplo, hemos re-asignado directamente el item que ocupa el segundo puesto en la lista (```thingsToBuy[1]```) y le hemos dado un nuevo valor ```'Peras'```. Esta es una de las formas, probablemente la más sencilla, de cambiar un item de un ```array``` cuando sabes exactamente la posición que quieres cambiar.
 
-### Añadir un item al final de la lista
+### Añadir un item al final del ```array```
 
-Existe un método que 
+Existe un método que te permite añadir un item y que ocupe el último puesto de tu ```array```. Este método se llama ```push()```. 
+
+Se aplica de la siguiente forma:
+
+```javascript
+let myLuckyNumbers = [4, 13, 45, 78];
+myLuckyNumbers.push(99)
+console.log(myLuckyNumbers) // [4, 13, 45, 78, 99]
+```
+
+Antes del ```.push()``` hay que poner el ```array``` al que queremos añadirle un item al final. Y, entre los paréntesis, hay que poner el elemento que queremos introducir. 
+
+### Añadir un item al principio del ```array```
+
+De forma similar, existe un método que te permite añadir un item y que ocupe el primer puesto del ```array```. Este método se llama ```unshift()```. 
+
+Se aplica de la siguiente forma:
+
+```javascript
+let carBrands = ["Toyota", "Ferrari", "Seat"];
+carBrands.unshift("Volvo")
+console.log(carBrands) // ["Volvo", "Toyota", "Ferrari", "Seat"]
+```
+
+Antes del ```.unshift()``` hay que poner el ```array``` al que queremos añadirle un item al principio. Y, entre los paréntesis, hay que poner el elemento que queremos introducir. 
+
+### Eliminar el primer item de un ```array```
+
+Para eliminar el primer item de un ```array```, es decir, el item en la posición ```0```, existe un método que se llama ```shift()```.
+
+Se aplica de la siguiente forma:
+
+```javascript
+let countries = ["Spain", "France", "Germany", "Mexico"];
+countries.shift()
+console.log(countries) // ["France", "Germany", "Mexico"]
+```
+
+Antes del ```.shift()``` hay que poner el ```array``` al que queremos eliminarle el primer item. Entre los paréntesis no hay que poner nada.
+
+### Eliminar el último item de un ```array```
+
+Para eliminar el último item de un ```array``` existe un método que se llama ```pop()```.
+
+Se aplica de la siguiente forma:
+
+```javascript
+let footballTeams = ["Real Madrid", "Villarreal", "Betis", "Granada"];
+footballTeams.pop()
+console.log(footballTeams) // ["Real Madrid", "Villarreal", "Betis"]
+```
+
+Antes del ```.pop()``` hay que poner el ```array``` al que queremos eliminarle el último item. Entre los paréntesis no hay que poner nada.
+
+
+## Otros métodos y propiedades
+
+Existen muchas propiedades y métodos de mucha utilidad que podemos utilizar sobre cualquier ```array``` para realizar acciones sobre éste u obtener información determinada sobre él.
