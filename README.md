@@ -116,3 +116,13 @@ Antes del ```.pop()``` hay que poner el ```array``` al que queremos eliminarle e
 ## Otros métodos y propiedades
 
 Existen muchas propiedades y métodos de mucha utilidad que podemos utilizar sobre cualquier ```array``` para realizar acciones sobre éste u obtener información determinada sobre él.
+
+Algunos de los más comunes y útiles son:
+
+- filter()
+- map()
+- find()
+- some()
+- every()
+- reduce()
+- includes()
