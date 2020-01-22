@@ -126,3 +126,4 @@ Algunos de los más comunes y útiles son:
 - every()
 - reduce()
 - includes()
+- splice()
