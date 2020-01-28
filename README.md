@@ -119,11 +119,24 @@ Existen muchas propiedades y métodos de mucha utilidad que podemos utilizar sob
 
 Algunos de los más comunes y útiles son:
 
-- filter()
+- includes()
+- pop()
+- push()
+- unshift()
+- reverse()
+- shift()
+- length
+
+- indexOf()
+- splice()
+
 - map()
+- filter()
+- reduce()
+
+Para despues:
 - find()
 - some()
 - every()
 - reduce()
-- includes()
 - splice()
