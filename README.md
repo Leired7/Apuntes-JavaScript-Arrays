@@ -119,18 +119,83 @@ Existen muchas propiedades y métodos de mucha utilidad que podemos utilizar sob
 
 Algunos de los más comunes y útiles son:
 
-- includes()
-- pop()
-- push()
-- unshift()
-- reverse()
-- shift()
-- length
+### .includes( )
 
+Este método determina si un existe un elemento determinado dentro de un ```array``` o ```string```. El resultado será ```true``` si el elemento está y ```false``` si no lo está. Este método se aplica directamente a un ```array``` o ```string``` y entre paréntesis hay que poner el elemento que estamos buscando.
 
-- indexOf()
-- splice()
+Ejemplos:
 
+```javascript
+let someArray = ['potato', 'fruits', 'cheese'];
+someArray.includes('potato') // true
+someArray.includes('apple') // false
+
+let someWord = 'Wild Code School'
+someWord.includes('e') // true
+someWord.includes('w') // false
+```
+:warning: Hay que tener en cuenta que ```.includes()``` es 'case sensitive', es decir, que diferencia entre las letras mayúsculas y minúsculas; las considera como letras diferentes.
+
+### .reverse( )
+
+Este método cambia de orden los elementos dentro de un ```array```. No recibe argumentos.
+
+Ejemplo:
+
+```javascript
+let someArray = ['potato', 'fruits', 'cheese'];
+someArray.reverse() // ['cheese', 'fruits', 'potato']
+```
+
+### .length
+
+Esta propiedad devuelve el valor de la longitud de un determinado ```array``` o ```string```.
+
+Ejemplos:
+
+```javascript
+let someArray = ['potato', 'fruits', 'cheese'];
+someArray.length // 3
+
+let someWord = 'Wild Code School'
+someWord.length // 16
+```
+:warning: Hay que tener en cuenta que en los ```string```, los espacios son considerados como un caracter. Por lo tanto, cuando calculemos ```.length``` de un string, también nos va a contar los espacios en blanco.
+
+### .indexOf( )
+
+Este método devuelve la posición dentro de un ```array``` o ```string``` del primer elemento específico que encuentra de izquierda a derecha. En el caso de que el elemento buscado no exista dentro del ```array```, ```indexOf()``` devolverá el valor ```-1```. Se aplica a un ```array``` o ```string```, y se pasa como argumento el elemento del que queremos obtener el ```index```.
+
+Ejemplos:
+
+```javascript
+let someArray = ['potato', 'fruits', 'cheese'];
+someArray.indexOf('potato') // 0
+someArray.indexOf('manzana') // -1
+
+let someWord = 'Wild Code School'
+someWord.indexOf(' ') // 4
+```
+
+### .splice( )
+
+Este método elimina elementos de un ```array``` desde una determinada posición dentro de este. También puede añadir elementos desde el ```index``` seleccionado. Devuelve los elementos eliminados.
+
+Puede recibir muchos argumentos: 
+- El primero indica el ```index``` desde donde vamos a empezar a eliminar items (este mismo incluido).
+- El segundo indica la cantidad de items que quieres eliminar
+- Del tercero en adelante se indica el contenido que quieres introducir sustituyendo los elementos que has eliminado.
+
+Ejemplos:
+
+```javascript
+let someArray = ['potato', 'fruits', 'cheese'];
+someArray.splice(0,1) // someArray = ['fruits', 'cheese']
+
+let anotherArray = [45, 23, 97]
+anotherArray.splice(1, 2, 2, 5, 4) // anotherArray = [45, 2, 5, 4]
+
+```
 
 - map()
 - filter()
