@@ -197,12 +197,11 @@ anotherArray.splice(1, 2, 2, 5, 4) // anotherArray = [45, 2, 5, 4]
 
 ```
 
+Faltan:
+
 - map()
 - filter()
 - reduce()
-
-
-Para despues:
 - find()
 - some()
 - every()
