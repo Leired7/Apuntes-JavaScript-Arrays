@@ -127,16 +127,17 @@ Algunos de los más comunes y útiles son:
 - shift()
 - length
 
+
 - indexOf()
 - splice()
+
 
 - map()
 - filter()
 - reduce()
 
+
 Para despues:
 - find()
 - some()
 - every()
-- reduce()
-- splice()
