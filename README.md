@@ -183,7 +183,7 @@ Este método elimina elementos de un ```array``` desde una determinada posición
 
 Puede recibir muchos argumentos: 
 - El primero indica el ```index``` desde donde vamos a empezar a eliminar items (este mismo incluido).
-- El segundo indica la cantidad de items que quieres eliminar
+- El segundo indica la cantidad de items que quieres eliminar.
 - Del tercero en adelante se indica el contenido que quieres introducir sustituyendo los elementos que has eliminado.
 
 Ejemplos:
@@ -197,6 +197,28 @@ anotherArray.splice(1, 2, 2, 5, 4) // anotherArray = [45, 2, 5, 4]
 
 ```
 
+### .every( )
+
+Este método revisa si todos los elementos dentro de un array pasan una condición determinada. Recibe una función como argumento, y ésta devolverá los valores que cumplan la condición anteriormente nombrada. Esta funcion, la que pasamos como argumento dentro de ```every()```, a su vez recibe un argumento que será igual a cada item del array.
+
+```.every()``` te devuelve un valor ```true```, si todos los items cumplen la condición, o ```false```. 
+
+
+
+Ejemplos:
+
+```javascript
+let numbersArray = [3, -5, 14, 95];
+
+numbersArray.every((number)=>{
+  return number > 0;
+}) // false
+
+numbersArray.every((number)=>{
+  return number !== 5;
+}) // true
+```
+
 Faltan:
 
 - map()
@@ -204,4 +226,3 @@ Faltan:
 - reduce()
 - find()
 - some()
-- every()
